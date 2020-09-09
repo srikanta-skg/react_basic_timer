@@ -22,12 +22,17 @@ class Timer extends React.Component {
     }
 
     myChangeHandler2 = (event) => {
-      console.log(event.target.value)
-      var value = event.target.value
-      console.log("i am value :", value)
-      this.setState({
-        [event.target.name]: event.target.value
-      });
+        var value = event.target.value
+        var min = Math.floor(value / 60);
+        var sec = value % 60;
+        console.log(event.target.value)
+        console.log("i am value :", value)
+        this.setState({
+            [event.target.name]: min
+        });
+        this.setState({
+            seconds: sec
+        });
     }
 
     myChangeHandler = () => {
@@ -89,7 +94,7 @@ class Timer extends React.Component {
        <Form obj ={this.state} 
        myChangeHandler =  { this.myChangeHandler }
        myChangeHandler2 = { this.myChangeHandler2 }
-       myChangeHandler3 =  { this.myChangeHandler3  }
+       myChangeHandler3 =  { this.myChangeHandler3 }
        />       
             </div>
       )
