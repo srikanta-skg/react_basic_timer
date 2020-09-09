@@ -37,7 +37,7 @@ class Timer extends React.Component {
 
     myChangeHandler = () => {
 
-      if (this.state.seconds <= 0) {
+      if (this.state.seconds <= 0  ) {
         alert("Enter value greater then 1")
         return;
       }
