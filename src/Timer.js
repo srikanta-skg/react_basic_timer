@@ -2,7 +2,6 @@ import React from 'react';
 import Form from './Form.js';
 
 class Timer extends React.Component {
-
     constructor(props) {
       super(props);
       this.state = {
@@ -88,7 +87,6 @@ class Timer extends React.Component {
     }
 
   render() {
-     
       return (
         <div className = "container" >
        <Form obj ={this.state} 
@@ -96,7 +94,7 @@ class Timer extends React.Component {
        event_handeler = { this.event_handeler }
        stop_handeler =  { this.stop_handeler }
        />       
-            </div>
+        </div>
       )
   }
 }
