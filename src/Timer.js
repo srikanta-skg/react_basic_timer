@@ -37,9 +37,7 @@ class Timer extends React.Component {
         alert("enter value greater then 1")
         return;
       }
-
-      
-
+        
       this.setState({
         icon_Click: false
       })

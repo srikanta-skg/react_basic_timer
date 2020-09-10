@@ -13,7 +13,7 @@ function Form(props) {
              <div>
                  <p className = "text_color small"> {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p> 
                  { show_Number == true ?  <input type="number"  name = "minutes" className = "input_taker" placeholder = 'Enter Number' onChange={props.event_handeler} ></input> :             
-                  <div>  { minutes === 0 && seconds === 0  ? <h1 className = "text_color">0</h1> : <h1 className = "text_color">Time: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1> } </div>  }
+                  <div>  { minutes === 0 && seconds <= 10  ? <h1 className = "text_color text_color2">Time: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1> : <h1 className = "text_color">Time: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1> } </div>  }
                      <div> <br></br> <br></br><br></br></div>
              </div>
             <div className = "icons">  
