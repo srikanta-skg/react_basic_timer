@@ -12,24 +12,21 @@ class Timer extends React.Component {
         icon_Click: true,
         show_Number: true,
       }
-      this.myChangeHandler = this.myChangeHandler.bind(this)
-      this.myChangeHandler2 = this.myChangeHandler2.bind(this);
-      this.myChangeHandler3 = this.myChangeHandler3.bind(this);
+      this.start_handeler = this.start_handeler.bind(this)
+      this.event_handeler = this.event_handeler.bind(this);
+      this.stop_handeler = this.stop_handeler.bind(this);
     }
 
-    componentWillUnmount() {
-      clearInterval(this.myInterval)
-    }
+   componentDidMount(){
+     console.log("dom has mounted into HTML file")
+   }
 
-    myChangeHandler2 = (event) => {
+   event_handeler = (event) => {
         var value = event.target.value
         var min = Math.floor(value / 60);
         var sec = value % 60;
         console.log(event.target.value)
         console.log("i am value :", value)
-
-
-
         this.setState({
             [event.target.name]: min
         });
@@ -38,7 +35,7 @@ class Timer extends React.Component {
         });
     }
 
-    myChangeHandler = () => {
+    start_handeler = () => {
 
       if ( this.state.seconds <= 0.1  &&  this.state.minutes <= 0 ) {
         alert("enter value greater then 1")
@@ -80,7 +77,7 @@ class Timer extends React.Component {
     componentDidUpdate() {
       console.log("updated")
     }
-    myChangeHandler3 = () => {
+    stop_handeler = () => {
       clearInterval(this.myInterval)
       this.setState({
         icon_Click: true
@@ -95,9 +92,9 @@ class Timer extends React.Component {
       return (
         <div className = "container" >
        <Form obj ={this.state} 
-       myChangeHandler =  { this.myChangeHandler }
-       myChangeHandler2 = { this.myChangeHandler2 }
-       myChangeHandler3 =  { this.myChangeHandler3 }
+       start_handeler =  { this.start_handeler }
+       event_handeler = { this.event_handeler }
+       stop_handeler =  { this.stop_handeler }
        />       
             </div>
       )
