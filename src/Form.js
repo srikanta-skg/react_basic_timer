@@ -18,7 +18,7 @@ function Form(props) {
              </div>
             <div className = "icons">  
                    { icon_Click == true ? <input className = "start_button" type="button" onClick  = {props.start_handeler} /> : 
-                   <input className = "pause_button"  type="button"  value = " " onClick  = {props.myChangeHandler3} />     }           
+                   <input className = "pause_button"  type="button"  value = " " onClick  = {props.stop_handeler} />     }           
             <label onSubmit={props.start_handeler}>
              <button className = "restart_button" ></button> </label>       
              <div> <br></br> </div>

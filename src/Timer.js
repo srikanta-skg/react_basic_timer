@@ -24,8 +24,6 @@ class Timer extends React.Component {
         var value = event.target.value
         var min = Math.floor(value / 60);
         var sec = value % 60;
-        console.log(event.target.value)
-        console.log("i am value :", value)
         this.setState({
             [event.target.name]: min
         });
@@ -35,11 +33,13 @@ class Timer extends React.Component {
     }
 
     start_handeler = () => {
-
       if ( this.state.seconds <= 0.1  &&  this.state.minutes <= 0 ) {
         alert("enter value greater then 1")
         return;
       }
+
+      
+
       this.setState({
         icon_Click: false
       })
@@ -48,6 +48,8 @@ class Timer extends React.Component {
       })
 
       this.myInterval = setInterval(() => {
+
+    
         const {
           seconds,
           minutes
