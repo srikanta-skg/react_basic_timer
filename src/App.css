@@ -1,107 +1,73 @@
 body {
-  /* background-color: blue; */
   color: white;
   font-family: Arial;
   text-align: center;
 }
 
-.container {
-  border: 2px solid white;
-  background-color: white;
-  z-index: -10;
-}
-
-
 .Header_title {
   background-color: #343a40 !important;
-  height: 60px;
+  height: 3rem;
   margin-top: 0;
   padding-top: 1%;
 }
 
-
 .number {
   display: flex;
   flex-direction: column;
-  height: 280px;
-  width: 280px;
+  height: 18rem;
+  width: 18rem;
   margin-left: auto;
   margin-right: auto;
   border: 6px solid gray;
   border-radius: 50%;
-  z-index: 1;
 }
 
 .icons {
-  /* margin-top: auto; */
+  margin-top: 16%; 
   display: flex;
-  margin-left: 25px;
+  margin-left: 2.5rem;
 }
 
-
 .start_button {
-  position: absolute;
   background-color: green;
   background-image: url("pinpng.com-start-icon-png-6106398.png");
   background-position: center;
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  margin-left: 10px;
-  background-size: 45px 45px;
-  border-radius: 10%;
-  z-index: 2;
-
+  width: 4rem;
+  height: 4rem;
+  background-size: 3rem 3rem;
+  border-radius: 8%;
 }
 
-
 .pause_button {
-  position: absolute;
   background-color: purple;
   background-image: url("stop-player-button.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  margin-left: 10px;
-  background-size: 45px 45px;
-  border-radius: 10%;
-  z-index: 2;
-
 }
 
 .restart_button {
-  position: absolute;
   background-color: blue;
   background-image: url("update-icon-png-image-4.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  margin-left: 145px;
-  background-size: 45px 45px;
-  border-radius: 10%;
-  z-index: 2;
+  margin-left: 5rem;
 }
-
 
 .text_color {
   color: blue;
   font-size: 33px;
 }
 
-.text_color2{
+.text_colorRed{
   color: red;
 }
 
 .small {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .input_taker {
   border: 5px solid whitesmoke;
-  height: 55px;
+  height: 3rem;
   border-radius: 5px;
   color: blue;
-  text-align: center
+  text-align: center;
+  font-size: 1rem;
 }
