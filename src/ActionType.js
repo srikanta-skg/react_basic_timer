@@ -1,0 +1,6 @@
+export const PLAY = 'PLAY'
+export const PAUSE = 'PAUSE'
+export const RESET = 'RESET'
+export const ADD = 'ADD'
+export const CLICKED = 'CLICKED'
+export const SHOW_NUMBER =  'SHOW_NUMBER'
